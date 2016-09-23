@@ -80,14 +80,16 @@
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
-  </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>play_music_triangle.ico</ApplicationIcon>
+    <ApplicationIcon>Content\play_music_triangle_small.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GoogleMusicApi, Version=1.0.39.0, Culture=neutral, processorArchitecture=MSIL">
@@ -198,7 +200,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="play_music_triangle.ico" />
+    <Resource Include="Content\play_music_triangle.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Content\play_music_triangle_small.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
