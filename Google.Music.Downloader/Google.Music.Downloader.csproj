@@ -63,7 +63,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>GoogleMusicDownloader.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>GoogleMusicDownloaderKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <DelaySign>false</DelaySign>
@@ -180,7 +180,7 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <None Include="GoogleMusicDownloader.pfx" />
+    <None Include="GoogleMusicDownloaderKey.snk" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <AppDesigner Include="Properties\" />
