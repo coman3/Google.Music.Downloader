@@ -85,7 +85,7 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Content\play_music_triangle_small.ico</ApplicationIcon>
+    <ApplicationIcon>application.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -200,10 +200,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Content\play_music_triangle.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Content\play_music_triangle_small.ico" />
+    <EmbeddedResource Include="application.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
