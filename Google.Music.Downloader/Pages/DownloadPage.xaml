@@ -1,0 +1,51 @@
+﻿<Page x:Class="Google.Music.Downloader.Pages.DownloadPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Google.Music.Downloader.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="DownloadPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Margin="5" VerticalAlignment="Center">Directory</TextBlock>
+                <TextBox Grid.Column="1" Margin="5" VerticalAlignment="Center" x:Name="DirectoryTextBox"></TextBox>
+                <Button Grid.Column="2" Margin="5" VerticalAlignment="Center" Click="ButtonBrowse_OnClick">Browse</Button>
+            </Grid>
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Margin="5" VerticalAlignment="Center">Directory Structure</TextBlock>
+                <ComboBox Grid.Column="1" Margin="5" VerticalAlignment="Center" x:Name="DirectoryStructure"></ComboBox>
+            </Grid>
+            <Grid Margin="5">
+                <Button Margin="5" VerticalAlignment="Center" x:Name="Download" Click="Download_Click">Start Download</Button>
+            </Grid>
+        </StackPanel>
+        <Grid Grid.Row="1" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ProgressBar Grid.Row="0" Margin="5, 0" Value="0" Maximum="100" x:Name="ProgressBar" />
+            <TextBox Grid.Row="1" Margin="5, 0, 5, 5" x:Name="LogBox" IsReadOnly="True" VerticalScrollBarVisibility="Auto" BorderBrush="Transparent" />
+            <Button Grid.Row="2" Margin="5" HorizontalAlignment="Left" Click="ButtonStartOver_OnClick" x:Name="StartOverButton">Start Over</Button>
+            <Button Grid.Row="2" Margin="5" HorizontalAlignment="Right" Click="ButtonClose_OnClick" x:Name="CloseButton">Close</Button>
+        </Grid>
+    </Grid>
+</Page>

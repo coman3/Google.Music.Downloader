@@ -1,0 +1,22 @@
+﻿<Page x:Class="Google.Music.Downloader.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Google.Music.Downloader.Pages"
+      mc:Ignorable="d" 
+      Title="LoginPage">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="50" MaxWidth="300" MinWidth="80">
+            <Image Source="/Content/play_music_triangle.png" MaxHeight="128" Margin="20"></Image>
+            <TextBlock Margin="5, 0">Username</TextBlock>
+            <TextBox Margin="5,0" x:Name="Username"></TextBox>
+            
+            <TextBlock Margin="5, 20, 10, 0">Password</TextBlock>
+            <PasswordBox Margin="5,0" x:Name="Password"></PasswordBox>
+            
+            <Button Margin="5, 20" Click="ButtonClick" IsDefault="True">Login</Button>
+        </StackPanel>
+    </Grid>
+</Page>
